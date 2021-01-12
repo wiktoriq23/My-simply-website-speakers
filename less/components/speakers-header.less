@@ -1,0 +1,103 @@
+@import 'var.less';
+
+.speakers-header{
+    background-color: @main-color;
+    padding-bottom: 40px;
+    
+ }
+ .speakers-main-section{
+     
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    @media only screen and (min-width:@mobile){
+       
+       margin: 0 auto;
+       max-width: 900px;
+       align-items: center;
+       
+    }
+   
+ 
+    &-title{
+       margin: 0 10px;
+       
+      &-link{
+       @media only screen and (min-width:@mobile){
+          font-size: 48px;
+          
+       }
+         color: white;
+         font-size: 30px;
+     font-weight: bold;
+     text-transform: uppercase;
+     
+      }
+    }
+    &-nav{
+       
+       @media only screen and (min-width:@mobile){
+          justify-self: end;
+       }
+       color: @title-color;
+       font-weight: normal;
+ 
+       &-title{
+          font-weight: normal;
+          @media only screen and (min-width:@mobile){
+             margin-left: 90px;
+             font-size: 21px;
+             justify-self: end;
+          }
+       }
+ 
+       &-links{
+          @media only screen and (min-width:@mobile){
+             padding: 5px;
+             text-transform: uppercase;
+          }
+          
+          color: white;
+       }
+       &-links:hover{
+          text-decoration: underline;
+       }
+    }
+ 
+ }
+ .speakers-sub-main-section{
+     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    text-align: center;
+    margin: 0;
+    padding: 10px 10px 20px 5px;
+    
+ 
+    &-title{
+        font-weight: bold;
+       color: @title-color;
+       text-align: center;
+       line-height: 30px;
+       
+       @media only screen and (min-width:@mobile){
+       font-size: 36px;
+       margin: 0;
+       margin: 40px 30px 10px 30px;
+    }
+    }
+    &-desc{
+ 
+       @media only screen and (min-width:@mobile){
+          font-size: 21px;
+          line-height: 44px;
+          margin: 0 80px 20px 80px;
+          max-width: 80%;
+          padding: 0 60px;
+ 
+          
+       }
+       font-weight: bold;
+       color: #888;
+       line-height: 20px;
+       
+    }
+}

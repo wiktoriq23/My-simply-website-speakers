@@ -1,0 +1,38 @@
+@import 'var.less';
+
+.footer{
+
+   background-color: @main-color;
+    font-size: 14px;
+    padding: 40px 0 40px 0;
+    @media only screen and (min-width: @mobile){
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+
+    &-wrapper{
+        display: grid;
+         grid-template-columns: auto auto;
+         justify-content: space-around;    
+
+        
+
+        &-conference{
+            justify-self: start;
+
+            span{
+                color: @sub-title-color;
+            }
+        }
+
+        &-links{
+            justify-self: end;
+
+            a{
+                color: white;
+                padding-right: 10px;
+            }
+        }
+    }
+}

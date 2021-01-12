@@ -1,0 +1,48 @@
+@import 'var.less';
+
+
+.section-venue-route{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 200px 200px;  
+    justify-content: space-around;
+    margin-bottom: 50px;
+    @media only screen and (min-width:@desktop){
+        justify-content: center;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: auto auto;
+        margin-top: 50px;
+        
+    }
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    align-content: center;  
+    align-items: center;
+
+    &-title{
+        color: @title-color;
+        @media only screen and (min-width:@desktop){
+            align-self: start;
+        }
+    }
+    &-desc{
+        color: #888;
+        @media only screen and (min-width:@desktop){
+            align-self: start;
+        }
+        
+    }
+    &-maps{
+        align-self: end;
+
+        iframe{
+            @media only screen and (min-width:@desktop){
+                width: 500px;
+                height: 300px;
+            }
+        }
+
+        
+        
+    }
+}
